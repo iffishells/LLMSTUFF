@@ -5,3 +5,6 @@ langchain-community
 python-dotenv
 langchain_openai
 pymupdf
+docarray
+pinecone-client
+tqdm
