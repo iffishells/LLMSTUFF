@@ -4,12 +4,13 @@ from langchain_openai.chat_models import ChatOpenAI
 from langchain_openai.embeddings import OpenAIEmbeddings
 from langchain_community.llms import Ollama
 from langchain_community.embeddings import OllamaEmbeddings
+env_path = os.path.join('..', '.env')
+
+load_dotenv(dotenv_path=env_path)
 
 
-load_dotenv()
 
 OPEN_API_KEY = os.getenv("OPEN_API_KEY")
-
 class LLMModels:
     def __init__(self,
                  model_name=None):
